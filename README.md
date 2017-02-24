@@ -6,6 +6,19 @@ __sw-precache plugin for roc.__
 ---
 To be used together with [Roc](https://github.com/rocjs/roc).
 
-BROKEN: Currently this is published for the sole reason of being able to npm link while developing.
 
-https://github.com/npm/npm/issues/12159
+# Notes
+
+Currently the action works by setting a timeout when ran, so if your build takes longer than the timeout it will fail. Working on finding a hook which runs on build completion. Additionally need to find a way to inject the service worker script into the html body.
+
+```$xslt
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
+```
+
+Needs to be inserted somewhere in body.

@@ -17,7 +17,7 @@ export default ({
                 staticFileGlobs: [absClientOutput + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
                 stripPrefix: absClientOutput
             }, () => { console.log('SW precache generated.'); });
-            }, 10000)
+            }, 15000)
         }
     }
 };
