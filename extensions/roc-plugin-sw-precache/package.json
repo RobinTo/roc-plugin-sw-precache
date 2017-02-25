@@ -3,7 +3,7 @@
   "description": "sw-precache plugin for roc.",
   "author": "Robin Tollisen",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "roc": "^1.0.0-rc.11",
-    "sw-precache": "^5.0.0"
+    "sw-precache": "^5.0.0",
+    "on-build-webpack": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "~6.1.2",

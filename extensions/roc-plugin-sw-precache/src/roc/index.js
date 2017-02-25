@@ -8,8 +8,8 @@ export default {
     meta,
     actions: [
         {
-            hook: 'run-build-command',
-            action: lazyRequire('../sw-precache')
+            hook: 'build-webpack',
+            action: lazyRequire('../sw-precache'),
         },
     ],
 };
